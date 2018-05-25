@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>blog</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgrn996Pdow8GDZm1Zv2tOVYjbEgTHnR4" defer></script><!--[if lt IE 9]>"
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="menu-wrap display">
+      <div class="menu__close">
+        <div class="menu__close-item"><i class="far fa-times-circle"></i></div>
+      </div>
+      <ul class="menu__list">
+        <li class="menu-item"><a class="menu__link" href="work.html">my work and contacts</a></li>
+        <li class="menu-item"><a class="menu__link" href="about.html">about me</a></li>
+        <li class="menu-item"><a class="menu__link" href="blog.html">my blog</a></li>
+        <li class="menu-item"><a class="menu__link" href="index.html">login in</a></li>
+      </ul>
+    </div>
+    <div class="preloader">
+      <div class="preloader__spiner">
+        <div class="preloader__animat"></div>
+        <div class="preloader__percents">0</div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <section class="header">
+        <div class="header-wrap">
+          <div class="header-main__bg">
+            <picture>
+              <source srcset="/assets/img/bg.png" media="(min-width: 1200px)">
+              <source srcset="/assets/img/header_bg1200.jpg" media="(min-width: 768px)">
+              <source srcset="/assets/img/header_bg768.jpg" media="(min-width: 420px)"><img class="img header-main__bg__pic" src="/assets/img/header_bg420.jpg" alt="header main background">
+            </picture>
+          </div>
+          <div class="header-bg">
+            <div class="header-bg__img-wrapper"><img class="header-bg__pic" src="assets/img/svg/portfolio.svg" alt="portfolio(picture-text)"></div>
+          </div>
+          <div class="header-socials__wrap">
+            <div class="socials"><a class="socials__link" href="https://github.com/atupkalo" target="_blank">
+                <svg width="35px" height="35px" role="img" fill="#fff" title="github">
+                  <use class="socials__icons" xlink:href="assets/img/sprite.svg#github_round"></use>
+                </svg></a><a class="socials__link" href="https://www.linkedin.com/in/anatolii-tupkalo-3aa8bb9b/" target="_blank">
+                <svg width="35px" height="35px" role="img" fill="#fff" title="in">
+                  <use class="socials__icons" xlink:href="assets/img/sprite.svg#in_round"></use>
+                </svg></a><a class="socials__link" href="https://www.facebook.com/anatoliy.orehov" target="_blank">
+                <svg width="35px" height="35px" role="img" fill="#fff" title="fb">
+                  <use class="socials__icons" xlink:href="assets/img/sprite.svg#fb-c"></use>
+                </svg></a>
+            </div>
+          </div>
+          <div class="header-avatar">
+            <div class="avatar">
+              <div class="avatar__img-block">
+                <div class="avatar__img-wrap"><img class="avatar__img" src="/assets/img/avatar-min.jpg" alt="picture"/></div>
+              </div>
+              <h1 class="avatar__name--wight">Anatolii Tupkalo</h1>
+              <h2 class="avatar__desc--wight">portfolio of web-developer</h2>
+            </div>
+          </div><a class="header-menu__link" href="#">
+            <div class="header-menu"><i class="fas fa-bars"></i></div></a><a class="header-arrow__link" href="#">
+            <div class="header-arrow"><i class="fas fa-chevron-down"></i></div></a>
+          <div class="header__triangle-left"></div>
+          <div class="header__triangle-right"></div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="blog__page-title">
+          <div class="page-title__wrap">
+            <div class="page-title__pic-wrap"><img class="page-title__pic" src="/assets/img/svg/blog.svg" alt="work(svg text)"/></div>
+            <div class="page-title__desc">
+              <h1 class="page-title__desc-text">Blog</h1>
+            </div>
+          </div>
+        </div>
+        <div class="blog__content">
+          <aside class="nav">
+            <ul class="nav__list"><a class="nav__list-item-link" href="#article-1">
+                <li class="nav__item blog-item__active">
+                  <div class="nav__item-desc"> Some article-111-.blog__article</div>
+                </li></a><a class="nav__list-item-link" href="#article-2">
+                <li class="nav__item">
+                  <div class="nav__item-desc"> Some article-111-.blog__article</div>
+                </li></a><a class="nav__list-item-link" href="#article-3">
+                <li class="nav__item">
+                  <div class="nav__item-desc"> Some article-111-.blog__article</div>
+                </li></a><a class="nav__list-item-link" href="#article-4">
+                <li class="nav__item">
+                  <div class="nav__item-desc"> Some article-111-.blog__article</div>
+                </li></a></ul>
+          </aside>
+          <div class="nav__under-clone"></div>
+          <div class="articles-wrap">
+            <article class="blog__article" id="article-1">
+              <div class="article__img-wrap"><img class="article__img" src="/assets/img/header_bg420.jpg"></div>
+              <div class="article__title">some title</div>
+              <div class="article__date"> some dat 2018</div>
+              <div class="article__text">
+                <p>
+                  a lot ov text Benito and Carol Gutierrez are accused of keeping the four children,
+                  aged between six and 12, locked in rooms with no light or food
+                    Police were alerted when one boy left the house in Tucson.
+                </p>
+                <p>
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                </p>
+                <p>
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                </p>
+                <p>
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                  p.
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                </p>
+              </div>
+            </article>
+            <article class="blog__article" id="article-2">
+              <div class="article__title">some title</div>
+              <div class="article__date"> some dat 2018</div>
+              <div class="article__text">
+                <p>
+                  a lot ov text Benito and Carol Gutierrez are accused of keeping the four children,
+                  aged between six and 12, locked in rooms with no light or food
+                    Police were alerted when one boy left the house in Tucson.
+                </p>
+                <p>
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                </p>
+                <p>
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                </p>
+                <p>
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                  p.
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school
+                </p>
+                <p>
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                  p.
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                  p.
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                  p.
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school
+                </p>
+              </div>
+            </article>
+            <article class="blog__article" id="article-3">
+              <div class="article__title">some title</div>
+              <div class="article__date"> some dat 2018</div>
+              <div class="article__text">
+                <p>
+                  a lot ov text Benito and Carol Gutierrez are accused of keeping the four children,
+                  aged between six and 12, locked in rooms with no light or food
+                    Police were alerted when one boy left the house in Tucson.
+                </p>
+                <p>
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                </p>
+                <p>
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                </p>
+              </div>
+            </article>
+            <article class="blog__article" id="article-4">
+              <div class="article__title">some title</div>
+              <div class="article__date"> some dat 2018</div>
+              <div class="article__text">
+                <p>
+                  a lot ov text Benito and Carol Gutierrez are accused of keeping the four children,
+                  aged between six and 12, locked in rooms with no light or food
+                    Police were alerted when one boy left the house in Tucson.
+                </p>
+                <p>
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                </p>
+                <p>
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                </p>
+                <p>
+                  a lot ov text Benito and Carol Gutierrez are accused of keeping the four children,
+                  aged between six and 12, locked in rooms with no light or food
+                    Police were alerted when one boy left the house in Tucson.
+                  p.
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                  p.
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                </p>
+                <p>
+                  a lot ov text Benito and Carol Gutierrez are accused of keeping the four children,
+                  aged between six and 12, locked in rooms with no light or food
+                    Police were alerted when one boy left the house in Tucson.
+                  p.
+                  He entered a shop to call a relative, but an employee called
+                   police because of concerns about the boy's appearance.
+                   The Pima County Sheriff's Department said they discovered
+                  that the children "were kept in separate bedrooms, which were
+                   locked from the outside, with no access to food, water, lights,
+                    or bathroom facilities for up to twelve hours at a time on a regular basis".
+                  p.
+                  Police said the children - all biological siblings adopted
+                  by the couple - did not realise the conditions in which they
+                  lived were unusual. They were excellent students and had no reported problems in school.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="blog__footer-holder"></div>
+      </section>
+      <footer class="footer">
+        <div class="footer-wrap"><a class="footer__arrow-up" href="#page-top" id="page-bottom">
+            <div class="footer__arrow-up-icon"><i class="fas fa-angle-up"></i></div></a>
+          <div class="footer-top">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="work.html">my work</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="about.html">about me</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="blog.html">my blog</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="index.html">sing in</a></li>
+            </ul>
+            <div class="footer-top__right">
+              <div class="socials"><a class="socials__link" href="https://github.com/atupkalo" target="_blank">
+                  <svg width="35px" height="35px" role="img" fill="#fff" title="github">
+                    <use class="socials__icons" xlink:href="assets/img/sprite.svg#github_round"></use>
+                  </svg></a><a class="socials__link" href="https://www.linkedin.com/in/anatolii-tupkalo-3aa8bb9b/" target="_blank">
+                  <svg width="35px" height="35px" role="img" fill="#fff" title="in">
+                    <use class="socials__icons" xlink:href="assets/img/sprite.svg#in_round"></use>
+                  </svg></a><a class="socials__link" href="https://www.facebook.com/anatoliy.orehov" target="_blank">
+                  <svg width="35px" height="35px" role="img" fill="#fff" title="fb">
+                    <use class="socials__icons" xlink:href="assets/img/sprite.svg#fb-c"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__left">
+              <div class="footer-bottom__text">I hope you like my portfolio</div>
+            </div>
+            <div class="footer-bottom__right">
+              <div class="footer-bottom__rights">&#169; created by Anatolii Tupkalo | "made with love"</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

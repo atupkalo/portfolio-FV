@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>admin</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgrn996Pdow8GDZm1Zv2tOVYjbEgTHnR4" defer></script><!--[if lt IE 9]>"
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header class="header__admin">
+      <div class="header__admin-title"> management panel</div><a class="header__admin-link" href="/index.html">Come back to portfolio</a>
+    </header>
+    <div class="admin-wrap">
+      <ul class="admin__tabs">
+        <li class="admin__tabs-item active"><a class="admin__tabs-item-link change_color" href="#">
+            <div class="admin__tabs-item-title">MY SKILLS EDITOR</div></a></li>
+        <li class="admin__tabs-item"><a class="admin__tabs-item-link" href="#">
+            <div class="admin__tabs-item-title">BLOG EDITOR</div></a></li>
+        <li class="admin__tabs-item"><a class="admin__tabs-item-link" href="#">
+            <div class="admin__tabs-item-title">MY WORK SLIDER EDITOR</div></a></li>
+        <li class="admin__tabs-item"><a class="admin__tabs-item-link" href="#">
+            <div class="admin__tabs-item-title">TAB 4</div></a></li>
+      </ul>
+      <ul class="admin__content">
+        <li class="admin__content-item active">
+          <div class="admin__content-item-about">
+            <div class="admin__title">About page/Skills</div>
+            <div class="skills-forms__wrap">
+              <form class="skills__new-section" action="submit" method="post">
+                <div class="skills__form-title"> add section</div>
+                <div class="new__section-item">
+                  <div class="new__section-name">add new section name</div>
+                  <input class="skills__input" type="text" name="section">
+                </div>
+                <input class="skills__section-btn admin__button" id="sec" type="submit" value="add">
+              </form>
+              <form class="skills__new-skill" action="submit" method="post">
+                <div class="skills__form-title"> add new skill</div>
+                <div class="new__tech-item">
+                  <div class="new__skill-item">
+                    <div class="new__skill-name">add new skill name</div>
+                    <input class="skills__input" type="text" name="skillName">
+                  </div>
+                  <div class="new__skill-item">
+                    <div class="new__skill-level">add new skill level</div>
+                    <input class="skills__input" type="text" name="skillLevel">
+                  </div>
+                  <input class="skills__new-skill-btn admin__button" id="circle" type="submit" value="add">
+                </div>
+              </form>
+              <form class="skills__level" name="skills">
+                <div class="skills__form-title">update your level</div>
+                <div class="skills__level-wrap">
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">html</div>
+                    <input class="skills__input skills__input--level" type="text" name="html">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">css</div>
+                    <input class="skills__input skills__input--level" type="text" name="css">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">js</div>
+                    <input class="skills__input skills__input--level" type="text" name="js">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">php</div>
+                    <input class="skills__input skills__input--level" type="text" name="php">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">sgl</div>
+                    <input class="skills__input skills__input--level" type="text" name="sgl">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">wp</div>
+                    <input class="skills__input skills__input--level" type="text" name="wp">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">node</div>
+                    <input class="skills__input skills__input--level" type="text" name="node">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">git</div>
+                    <input class="skills__input skills__input--level" type="text" name="git">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">gulp</div>
+                    <input class="skills__input skills__input--level" type="text" name="gulp">
+                  </div>
+                  <div class="skills-level__item">
+                    <div class="skills-level__name">wbp</div>
+                    <input class="skills__input skills__input--level" type="text" name="wbp">
+                  </div>
+                </div>
+                <button class="admin__button admin__button--skills-level" id="levels" type="submit">Retain</button>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="admin__content-item">
+          <div class="admin-blog">
+            <div class="admin__title">Blog page</div>
+            <div class="admin__blog-wrap">
+              <form class="blog-edditor-form" name="blog">
+                <div class="admin__blog-item-wrap">
+                  <div class="admin-blog__table-desc"> article title</div>
+                  <input class="admin-blog__input admin-blog__input-title" type="name" placeholder="title" name="title">
+                </div>
+                <div class="admin__blog-item-wrap">
+                  <div class="admin-blog__table-desc">  posted date</div>
+                  <input class="admin-blog__input admin-blog__input-date" type="date" placeholder="date" name="date">
+                </div>
+                <div class="admin__blog-item-wrap">
+                  <div class="admin-blog__table-desc">  article content</div>
+                  <textarea class="admin-blog__input admin-blog__input-content" placeholder="content" name="text"></textarea>
+                </div>
+                <div class="admin__blog-item-wrap">
+                  <div class="admin-blog__table-desc">  articale image</div>
+                  <input class="admin-blog__input admin-blog__imput-img" type="file" name="blogImg">
+                  <input type="hidden" name="img" value="">
+                </div>
+                <button class="admin__button admin__button--blog" type="submit"> submit</button>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="admin__content-item">
+          <div class="admin-work">
+            <div class="admin__title">My work page</div>
+            <div class="admin-table__desc">Add project</div>
+            <div class="admin__work-wrap">
+              <form class="slider-additor-form" name="slider">
+                <div class="admin-work__input-icon"><i class="far fa-copy"></i>
+                  <input class="admin-work__input admin-work__input-slider" type="text" placeholder="project title" name="title">
+                </div>
+                <div class="admin-work__input-icon"><i class="fas fa-link"></i>
+                  <input class="admin-work__input admin-work__input-slider" type="text" placeholder="technologies" name="tech">
+                </div>
+                <div class="admin-work__input-icon"><i class="fas fa-text-width"></i>
+                  <input class="admin-work__input admin-work__input-slider" type="text" placeholder="link" name="refer">
+                </div>
+                <div class="admin-work__input-icon"><i class="fas fa-download"></i>
+                  <input class="admin-work__input-file admin-work__input-slider" type="file" name="picture">
+                  <input type="hidden" name="sliderImg" value="">
+                </div>
+                <button class="admin__button admin-button--slider" type="submit" disabled="disabled">submit</button>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="admin__content-item"></li>
+      </ul>
+    </div>
+  </body>
+</html>
